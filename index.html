@@ -19,7 +19,17 @@
             <h1 class="Center">DevStats</h1>
         </header>
         <main>
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <form action="#">
+                <legend>LogIn</legend>
+                <fieldset>
+                    <label for="email">Email</label><br>
+                    <input type="email"><br>
+                    <label for="password">Password</label><br>
+                    <input type="password">
+                    <button type="submit">Login</button>
+                    <button type="button" onclick="signUp();">SignUp</button>
+                </fieldset>
+            </form>
         </main>
         <script src="script.js"></script>
         <script
