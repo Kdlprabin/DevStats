@@ -8,6 +8,7 @@
             content="1013777395636-fd3otgtp9ohcpvf5mh59svs9oulc1jpi.apps.googleusercontent.com">
         <title>DevStats</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -16,20 +17,29 @@
     </head>
     <body>
         <header>
-            <h1 class="Center">DevStats</h1>
+            <h1 class="text-center bg-dark text-light p-3 rounded-bottom">DevStats</h1>
         </header>
-        <main>
-            <form action="#">
-                <legend>LogIn</legend>
-                <fieldset>
-                    <label for="email">Email</label><br>
-                    <input type="email"><br>
-                    <label for="password">Password</label><br>
-                    <input type="password">
-                    <button type="submit">Login</button>
-                    <button type="button" onclick="signUp();">SignUp</button>
-                </fieldset>
-            </form>
+        <main class="container-fluid">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12 offset-xl-3 offset-lg-3 offset-md-2">
+                    <h2 class="text-uppercase text-center bg-dark text-light
+                        rounded-top py-2 my-0">Login</h2>
+                    <form action="#" class="border rounded-bottom">
+                        <fieldset class="p-5">
+                            <label for="email">Email</label><br>
+                            <input class="form-control" type="email"
+                                placeholder="name@gmail.com"><br>
+                            <label for="password">Password</label><br>
+                            <input class="form-control" type="password"
+                                placeholder="********"><br>
+                            <button class="btn btn-primary" type="submit">Login</button>
+                            <button class="btn btn-primary" type="button"
+                                onclick="signUp();">SignUp</button>
+                        </fieldset>
+                    </form>
+                    <a href="#">forgot password?</a>
+                </div>
+            </div>
         </main>
         <script src="script.js"></script>
         <script
@@ -42,7 +52,6 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
             integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
             crossorigin="anonymous"></script>
-
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
