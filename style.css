@@ -1,62 +1,13 @@
 /* 14213d --Blue Color*/
 /* e5e5e5 --Base Color*/
 /* fcf6bd --Yellow Color*/
-*{
-    margin: 0;
-    padding: 0;
-    color:#14213d;
+.data{
+    display: none;
 }
-body{
-    background-color: #e5e5e5;
-}
-.Center{
-    text-align: center;
-    color: white;
-}
-header{
-    background-color: #14213d;
-    color:white;
-    border-radius: 0px 0px 10px 10px;
-    padding: 10px;
-}
-form{
-    border: 1px solid #14213d;
-    display: inline-block;
-    padding: 10px;
-    background-color: #fcf6bd;
-    height: 60vh;
-    width: 50vw;
-    border-radius:10px;
-}
-form input{
-    height: 4vh;
-    width: 40vw;
-    border-radius: 10px;
-    border: 1px solid #14213d;
-    text-align: center;
-    margin: 10px;
-}
-main{
-    position: Absolute;
-    top:20vh;
-    right:25vw;
-}
-main form button{
-    padding: 5px;
-    color: white;
-    background-color: #14213d;
-    border-radius: 10px;
-    display: inline-block;
-    width:10vw;
-}
-main form button:hover{
-    background-color: white;
-    color:#14213d;
-}
-#login{
-    text-align: center;
-}
-.put_end{
-    text-decoration: none;
-    color: purple;
+.g-signin2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top:-50px;
+    margin-left:-50px;
 }
