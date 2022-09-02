@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS DevStats;
+
+CREATE DATABASE DevStats;
+
+USE DevStats;
+
+CREATE TABLE DevStats (
+    customer_id INT PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    gender VARCHAR(255) NOT NULL,
+    DOB date NOT NULL
+);
