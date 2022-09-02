@@ -20,11 +20,12 @@
             <h1 class="text-center bg-dark text-light p-3 rounded-bottom">DevStats</h1>
         </header>
         <main class="container-fluid">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12 offset-xl-3 offset-lg-3 offset-md-2">
+            <div class="row" id="login">
+                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12
+                    offset-xl-3 offset-lg-3 offset-md-2">
                     <h2 class="text-uppercase text-center bg-dark text-light
                         rounded-top py-2 my-0">Login</h2>
-                    <form action="#" class="border rounded-bottom">
+                    <form action="script.js"method="post" class="border rounded-bottom">
                         <fieldset class="p-5">
                             <label for="email">Email</label><br>
                             <input class="form-control" type="email"
@@ -34,10 +35,44 @@
                                 placeholder="********"><br>
                             <button class="btn btn-primary" type="submit">Login</button>
                             <button class="btn btn-primary" type="button"
-                                onclick="signUp();">SignUp</button>
+                                onclick="registerBtn();" id="register">Register</button>
                         </fieldset>
                     </form>
                     <a href="#">forgot password?</a>
+                </div>
+            </div>
+            <div class="row" id="signup">
+                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12
+                    offset-xl-3 offset-lg-3 offset-md-2">
+                    <h2 class="text-uppercase text-center bg-dark text-light
+                        rounded-top py-2 my-0">SignUp</h2>
+                    <form action="#" method="post" class="border rounded-bottom">
+                        <fieldset class="p-5">
+                            <label for="email">Email</label><br>
+                            <input class="form-control" type="email"
+                                placeholder="name@gmail.com"><br>
+                            <label for="password">Password</label><br>
+                            <input class="form-control" type="password"
+                                placeholder="********"><br>
+                            <label for="confirm_password">Confirm Password</label><br>
+                            <input class="form-control" type="password"
+                                placeholder="********"><br>
+                            <fieldset class="form-control">
+                                <Legend>Gender</Legend>
+                                <input type="radio" name="gender"><label>Male</label><br>
+                                <input type="radio" name="gender"><label>Female</label><br>
+                                <input type="radio" name="gender"><label>Other</label><br>
+                                <input type="radio" name="gender"><label>Prefer not to say</label><br>
+                            </fieldset>
+                            <fieldset>
+                                <label>Date Of Birth</label><br>
+                                <input type="date" class="rounded"><br>
+                            </fieldset>
+                            <button class="btn btn-primary my-3" type="button"
+                                onclick="signUp();">SignUp</button>
+                            <button class="btn btn-primary my-4" type="button" onclick="backToLogin();">Back</button>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </main>
