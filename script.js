@@ -6,3 +6,11 @@ function backToLogin(){
     document.getElementById("signup").style.display = "none";
     document.getElementById("login").style.display = "block";
 }
+
+fetch("https://opentdb.com/api.php?amount=10")
+.then((Response)=>{
+    return Response.json();
+})
+.then((Data)=>{
+    console.log(Data);
+})
